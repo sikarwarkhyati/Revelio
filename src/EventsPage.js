@@ -32,11 +32,12 @@ const events = [
 
 const EventsPage = () => {
   const containerStyle = {
-  padding: '100px 20px 60px 20px', // Top padding increased to 100px
-  background: 'linear-gradient(135deg, #f0f4f8, #d9f2e6)',
+  padding: '100px 20px 60px 20px',
+  background: 'inherit', // Unified background
   minHeight: '100vh',
   fontFamily: 'Arial, sans-serif',
 };
+
 
 
   const headerStyle = {

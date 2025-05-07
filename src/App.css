@@ -6,11 +6,28 @@
 }
 
 /* Prevent horizontal scroll globally */
+/* Apply background to entire body */
 body {
-  overflow-x: hidden;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f4f8, #d9f2e6);
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
 }
+
+/* In App.css or index.css */
+html, body {
+  width: 100%;
+  min-height: 100%;
+}
+
+
+/* Apply same background in .App */
+.App {
+  text-align: center;
+  background: inherit;
+}
+
 
 /* App-specific styles */
 .App {
@@ -60,12 +77,11 @@ body {
 }
 
 .community-container {
-  padding: 2rem;
-  background: linear-gradient(135deg, #e0f7fa, #80deea);
-  animation: moveBackground 20s linear infinite;
-  background-size: 400% 400%;
+  padding: 60px 20px;
+  background: inherit;
   min-height: 100vh;
 }
+
 
 .community-header {
   font-size: 2rem;
@@ -74,15 +90,7 @@ body {
   margin-bottom: 1rem;
 }
 
-.community-container {
-  padding: 80px 20px;
-  color: #f3f1e8;
-  text-align: center;
-  background: linear-gradient(135deg, #e0f7fa, #80deea);
-  animation: moveBackground 20s linear infinite;
-  background-size: 400% 400%;
-  min-height: 100vh;
-}
+
 
 .review-card {
   display: flex;

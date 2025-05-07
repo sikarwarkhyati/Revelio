@@ -1,31 +1,31 @@
 import React from 'react';
 import './PostCard.css'; // custom styles here
 
-const PostCard = () => {
+const PostCard = ({ username, avatar, content, likes, comments }) => {
   return (
     <div className="post-card">
       {/* User Info */}
       <div className="user-info">
         <img
-          src="/images/sanya.jpg"
-          alt="Sanya Kapoor"
+          src={avatar}
+          alt={username}
           className="user-avatar"
         />
-        <span className="user-name">Sanya Kapoor</span>
+        <span className="user-name">{username}</span>
       </div>
 
       {/* Post Content */}
       <p className="post-content">
-        Had an amazing experience at the <strong>TechFest</strong>! The workshops and networking were fantastic. Looking forward to the next one! 🔥
+        {content}
       </p>
 
       {/* Like and Comment Icons */}
       <div className="post-actions">
         <button className="action-btn">
-          ♡ <span>12</span>
+          ♡ <span>{likes}</span>
         </button>
         <button className="action-btn">
-          💬 <span>3</span>
+          💬 <span>{comments}</span>
         </button>
       </div>
 

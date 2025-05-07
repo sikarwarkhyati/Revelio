@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 import Home from "./Home";
 import EventsPage from "./EventsPage";
 import Community from "./Community";
-import Blog from "./Blog";
+import Blog from "./Bts";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
 import UpcomingEvents from "./UpcomingEvents";

@@ -5,8 +5,10 @@
   background: white;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
 }
 
+/* User Info Section */
 .user-info {
   display: flex;
   align-items: center;
@@ -24,14 +26,17 @@
 .user-name {
   font-weight: bold;
   font-size: 16px;
+  color: #222; /* ✅ Ensures visibility on white background */
 }
 
+/* Post Content */
 .post-content {
   font-size: 15px;
   color: #333;
   margin-bottom: 16px;
 }
 
+/* Like & Comment Buttons */
 .post-actions {
   display: flex;
   gap: 20px;
@@ -53,6 +58,7 @@
   color: #007bff;
 }
 
+/* Comment Section */
 .comment-box {
   display: flex;
   gap: 10px;
@@ -63,6 +69,7 @@
   padding: 8px 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
+  font-size: 14px;
 }
 
 .submit-btn {
@@ -72,6 +79,7 @@
   color: white;
   border-radius: 6px;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .submit-btn:hover {
